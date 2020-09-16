@@ -357,6 +357,7 @@ GameObject:
   - component: {fileID: 1155398294}
   - component: {fileID: 1155398298}
   - component: {fileID: 1155398299}
+  - component: {fileID: 1155398300}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -472,6 +473,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DragObjList: []
   m_OrbGenerater: {fileID: 1229256754}
+  CurrentComboCount: 0
+--- !u!114 &1155398300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155398293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be68de801e79dff4f98ad39ecf17b947, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_scoreText: {fileID: 1435180172}
 --- !u!1 &1229256752
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,6 +537,7 @@ MonoBehaviour:
   - {fileID: 3533480553445918828, guid: 208bcfa80a24722419353437e6ab4795, type: 3}
   - {fileID: 3533480553445918828, guid: dcc668afc106fd845a74417459b87571, type: 3}
   m_comboCounter: {fileID: 1155398299}
+  OrbList: []
 --- !u!1 &1435180170
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,7 +735,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1482240276}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 592d8abf8b0ca154382c0f86792ee83f, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -827,7 +843,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1523413500}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 592d8abf8b0ca154382c0f86792ee83f, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1118,7 +1134,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 2077500219}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 592d8abf8b0ca154382c0f86792ee83f, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

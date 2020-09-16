@@ -11,6 +11,9 @@ public class ComboCounter : MonoBehaviour
 
     public OrbGenerater m_OrbGenerater = null;
 
+    public int CurrentComboCount = 0;
+
+
     public void AddCombo(GameObject orb)
     {
         DragObjList.Add(orb);
@@ -38,6 +41,7 @@ public class ComboCounter : MonoBehaviour
             {
                 orbs.GetComponent<OrbController>().ComboEffect.gameObject.SetActive(false);
             }
+            CurrentComboCount++;
         }
         DragObjList.Clear();
     }
