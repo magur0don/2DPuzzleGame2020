@@ -40,6 +40,10 @@ public class OrbController : MonoBehaviour, IPointerDownHandler, IPointerEnterHa
         {
             return;
         }
+        if (comboCounter.CheckCombo(this.transform))
+        {
+            return;
+        }
 
         if (comboCounter.DragObjList.Contains(this.gameObject))
         {
@@ -47,7 +51,7 @@ public class OrbController : MonoBehaviour, IPointerDownHandler, IPointerEnterHa
             {
                 return;
             }
-
+            
             comboCounter.MinusCombo();
             return;
         }

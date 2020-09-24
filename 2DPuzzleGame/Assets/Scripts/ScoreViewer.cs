@@ -11,6 +11,8 @@ public class ScoreViewer : MonoBehaviour
 
     private int comboRate = 10;
 
+    public int Score => m_comboCounter.CurrentComboCount * comboRate;
+
     private void Update()
     {
         m_scoreText.text = $"Score:{m_comboCounter.CurrentComboCount * comboRate} ";

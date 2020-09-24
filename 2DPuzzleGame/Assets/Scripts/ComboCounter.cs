@@ -45,4 +45,10 @@ public class ComboCounter : MonoBehaviour
         }
         DragObjList.Clear();
     }
+
+    public bool CheckCombo(Transform thisOrbTransform)
+    {
+        var diff = (thisOrbTransform.position - DragObjList.LastOrDefault().transform.position).sqrMagnitude;
+        return diff > 2.0f;
+    }
 }
