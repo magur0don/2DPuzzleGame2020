@@ -21,7 +21,7 @@ public class OrbController : MonoBehaviour, IPointerDownHandler, IPointerEnterHa
     public ParticleSystem ComboEffect = null;
 
     public OrbGenerater OrbGenerater = null;
-    
+
     private void Awake()
     {
         m_spriteRenderer = GetComponent<SpriteRenderer>();
@@ -51,7 +51,7 @@ public class OrbController : MonoBehaviour, IPointerDownHandler, IPointerEnterHa
             {
                 return;
             }
-            
+
             comboCounter.MinusCombo();
             return;
         }
@@ -72,6 +72,8 @@ public class OrbController : MonoBehaviour, IPointerDownHandler, IPointerEnterHa
             {
                 orb.SetActive(false);
             }
+
+            comboCounter.CurrentComboCount += comboCounter.ComboCount;
             OrbGenerater.OrbGenerate(comboCounter.ComboCount);
         }
         comboCounter.ClearCombo();

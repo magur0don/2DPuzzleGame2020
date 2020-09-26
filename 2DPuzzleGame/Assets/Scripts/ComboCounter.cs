@@ -41,7 +41,6 @@ public class ComboCounter : MonoBehaviour
             {
                 orbs.GetComponent<OrbController>().ComboEffect.gameObject.SetActive(false);
             }
-            CurrentComboCount++;
         }
         DragObjList.Clear();
     }
